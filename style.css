@@ -1,5 +1,11 @@
+html {
+    height: 100%;
+}
+
 body {
     background-image: url('zgeTuV.jpg');
-    background-position: center;
-    background-size:cover;
+    height: 100%;
+    background-size:cover;   
+    background-repeat: no-repeat;
+    background: linear-gradient();
 }
