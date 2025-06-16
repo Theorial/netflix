@@ -1,5 +1,9 @@
 body {
-    background-image: url('zgeTuV.jpg');
-    background-position: center;
-    background-size:cover;
+  background-image: url("zgeTuV.jpg");
+  background-position: center;
+  background-size: cover;
+}
+html {
+  color: white;
+  text-align: center;
 }
