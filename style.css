@@ -1,4 +1,5 @@
 body {
     background-image: url('zgeTuV.jpg');
-    height: 100vh
+    background-position: center;
+    background-size:cover;
 }
