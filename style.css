@@ -2,8 +2,22 @@ body {
   background-image: url("zgeTuV.jpg");
   background-position: center;
   background-size: cover;
+  height: 100%;
 }
+
 html {
   color: white;
   text-align: center;
+  font-family: sans-serif;
+  height: 100%;
+}
+h1 {
+  font-size: 40px;
+}
+#top {
+  border: 2px solid red;
+  height: 25%;
+}
+#membership {
+  margin-bottom: 5px;
 }
