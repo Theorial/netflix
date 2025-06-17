@@ -4,17 +4,57 @@ html {
   font-family: sans-serif;
   height: 100%;
 }
-h1 {
-  font-size: 40px;
-}
+
 #top {
-  border: 2px solid red;
-  height: 25%;
+  height: 15%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+}
+#top img {
+  margin-top: 20px;
+  width: 60%;
+  height: 50%;
+  object-fit: cover;
+}
+.top-box {
+  width: 28%;
+}
+h1 {
+  font-size: 57px;
+  font-weight: bold;
+  margin: 0;
+}
+h3 {
+  font-size: 15px;
+  font-weight: normal;
 }
 #membership {
-  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 2%;
 }
-
+.email {
+  border: 2px solid red;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.myInput {
+  background-color: rgba(45, 31, 31, 0.588);
+  padding-left: 10px;
+  width: 22%;
+  color: white;
+}
+.emailButton {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  width: 15%;
+}
 body {
   z-index: 50;
   background-image: url("zgeTuV.jpg");
