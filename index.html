@@ -12,60 +12,87 @@
     <div class="backgrounddiv">
       <div id="top">
         <div class="top-box" id="left">
-          <img src="./corner.png" alt="corner">
+          <img src="./corner.png" alt="corner" />
         </div>
-       <div class="top-box" id="right"></div>
-     </div>
-     <h1>
-        Unlimited movies, TV<br />
-        shows, and more
-     </h1>
+        <div class="top-box" id="right">
+          <select
+            id="myDropdown"
+            name="myDropdown"
+            onchange="if(this.value) window.location.href=this.value;"
+          >
+            <option value="">English</option>
+            <option value="https://www.netflix.com/us-es/">
+              Spanish(dont click)
+            </option>
+          </select>
+          <button
+            class="signInButton"
+            type="submit"
+            onclick="window.location.href='https://www.netflix.com/login'"
+          >
+            Sign In
+          </button>
+        </div>
+      </div>
+      <div>
+        <h1>
+          Unlimited movies, TV<br />
+          shows, and more
+        </h1>
         <p id="membership">Starts at $7.99. Cancel anytime.</p>
-         <h3>
-           Ready to watch? Enter your email to create or restart your membership.
+        <h3>
+          Ready to watch? Enter your email to create or restart your membership.
         </h3>
         <form class="email">
-          <input type="text" class="myInput" name="myInput" placeholder="Email Address"><br>
-          <button class="emailButton" type="submit">Get Started > </button>
+          <input
+            type="text"
+            class="myInput"
+            name="myInput"
+            placeholder="Email Address"
+          /><br />
+          <button class="emailButton" type="submit">Get Started ></button>
         </form>
       </div>
     </div>
-  <div class="underDiv"><div class="flex-container">
-<div class="child-flex-c">
-<p>
-FAQ <br>
-Investor Relations <br>
-Buy Gift Cards <br>
-Privacy <br>
-Cookie Preferences <br>
-Ad Choices <br>
-</p>
-</div>
-<div class="child-flex-c">
-<p>Help Center <br>
-Jobs <br>
-Ways to Watch <br>
-Corporate Information <br>
-Only on Netflix <br>
-</p>
-</div>
-<div class="child-flex-c">
-<p>Account <br>
-Netflix Shop <br>
-Terms of Use <br>
-Contact Us <br>
-Legal Notices <br>
-</p>
-</div>
-<div class="child-flex-c">
-<p>
-Media Center <br>
-Redeem Gift Cards <br>
-Speed Test <br>
-Do Not Sell or Share My Personal Information <br>
-</p>
-</div>
-</div></div>
-</body>
+    <div class="underDiv">
+      <div class="flex-container">
+        <div class="child-flex-c">
+          <p>
+            FAQ <br />
+            Investor Relations <br />
+            Buy Gift Cards <br />
+            Privacy <br />
+            Cookie Preferences <br />
+            Ad Choices <br />
+          </p>
+        </div>
+        <div class="child-flex-c">
+          <p>
+            Help Center <br />
+            Jobs <br />
+            Ways to Watch <br />
+            Corporate Information <br />
+            Only on Netflix <br />
+          </p>
+        </div>
+        <div class="child-flex-c">
+          <p>
+            Account <br />
+            Netflix Shop <br />
+            Terms of Use <br />
+            Contact Us <br />
+            Legal Notices <br />
+          </p>
+        </div>
+        <div class="child-flex-c">
+          <p>
+            Media Center <br />
+            Redeem Gift Cards <br />
+            Speed Test <br />
+            Do Not Sell or Share My Personal Information <br />
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
-
