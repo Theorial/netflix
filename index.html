@@ -15,16 +15,12 @@
           <img src="./corner.png" alt="corner" />
         </div>
         <div class="top-box" id="right">
-          <select
-            id="myDropdown"
-            name="myDropdown"
-            onchange="if(this.value) window.location.href=this.value;"
-          >
-            <option value="">English</option>
-            <option value="https://www.netflix.com/us-es/">
-              Spanish(dont click)
-            </option>
-          </select>
+                    <div class="language-selector">
+            <select>
+              <option value="en">English</option>
+              <option value="es">Español</option>
+            </select>
+          </div>
           <button
             class="signInButton"
             type="submit"
@@ -54,7 +50,39 @@
         </form>
       </div>
     </div>
+<div class="trending-section">
+  <div class="trending-container">
+    <h2>Trending Now</h2>
+    <div class="trending-row">
+      <div class="trending-item">
+        <img src="https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg" alt="Stranger Things">
+      </div>
+      <div class="trending-item">
+        <img src="https://image.tmdb.org/t/p/w500/gFZriCkpJYsApPZEF3jhxL4yLzG.jpg" alt="The Witcher">
+      </div>
+      <div class="trending-item">
+        <img src="https://image.tmdb.org/t/p/w500/9yxep7oJdkj3Pla9TD9gKflRApY.jpg" alt="Money Heist">
+      </div>
+      <div class="trending-item">
+        <img src="https://image.tmdb.org/t/p/w500/34FaY8qpjBAVysSfrJ1l7nrAQaD.jpg" alt="Squid Game">
+      </div>
+      <div class="trending-item">
+        <img src="https://image.tmdb.org/t/p/w500/6kbAMLteGO8yyewYau6bJ683sw7.jpg" alt="The Queen's Gambit">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
     <div class="underDiv">
+        <form class="email" id="bottomEmail">
+          <input
+            type="text"
+            class="myInput"
+            name="myInput"
+            placeholder="Email Address"
+          /><br />
+          <button class="emailButton" type="submit">Get Started ></button>
+        </form>
       <div class="flex-container">
         <div class="child-flex-c">
           <p>

@@ -6,11 +6,14 @@ html {
 }
 
 #top {
-  height: 15%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10%;
+  align-items: center;
+  padding: 20px 50px;
+  position: relative;
+  z-index: 10;
 }
+
 #top img {
   margin-top: 20px;
   width: 60%;
@@ -19,7 +22,6 @@ html {
 }
 .top-box {
   width: 28%;
-  border: 2px solid red;
 }
 h1 {
   font-size: 57px;
@@ -27,16 +29,31 @@ h1 {
   margin: 0;
 }
 #right {
-  padding: 2%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.signInButton {
-  background-color: red;
+.language-selector select {
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
+  border: 1px solid #aaa;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.signInButton {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 16px;
   font-weight: bold;
-  font-size: 15px;
-  padding: 10px;
-  width: 30%;
-  margin-left: 5px;
+  cursor: pointer;
+}
+.signInButton:hover{
+  transform: scale(1.03);
 }
 h3 {
   font-size: 15px;
@@ -58,6 +75,7 @@ h3 {
   padding-left: 10px;
   width: 22%;
   color: white;
+  border-radius: 4px;
 }
 .emailButton {
   background-color: red;
@@ -65,7 +83,11 @@ h3 {
   font-weight: bold;
   font-size: 20px;
   padding: 10px;
+  border-radius: 4px;
   width: 15%;
+}
+.emailButton:hover {
+  transform: scale(1.03);
 }
 body {
   z-index: 50;
@@ -86,25 +108,87 @@ body {
     );
   }
 }
-
-.underDiv {
-  height: 100%;
-  width: 100%;
-  background-color: black;
+/* Trending Section */
+.trending-section {
+  background-color: #000;
+  padding: 50px 0;
+  border-top: 8px solid #222;
 }
 
+.trending-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.trending-section h2 {
+  font-size: 1.625rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.trending-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.trending-item {
+  width: 200px;
+  transition: transform 0.2s;
+}
+
+.trending-item:hover {
+  transform: scale(1.05);
+}
+
+.trending-item img {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .trending-item {
+    width: 150px;
+  }
+  
+  .trending-row {
+    gap: 10px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trending-item {
+    width: 120px;
+  }
+}
+
+.underDiv {
+  background-color: #000;
+  padding: 70px 45px;
+  border-top: 8px solid #222;
+}
+#bottomEmail{
+  
+  margin-top: 100px;
+  text-align: center;
+}
 .flex-container {
   position: relative;
   display: flex;
   flex-basis: auto;
   flex-direction: row;
   height: 200px;
+  top: 50px;
   width: 80%;
-  top: 350px;
   justify-content: center;
   align-self: center;
   margin: auto;
-  margin-bottom: 700px;
+  margin-bottom: 200px;
 }
 
 .child-flex-c {
