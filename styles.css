@@ -197,7 +197,7 @@ body {
 }
 
 .heightadjuster {
-  top : 150px;
+  top : 250px;
   flex: 1
 }
 
@@ -207,7 +207,7 @@ body {
     flex-basis: auto;
     flex-direction: column;
     justify-content: space-around;
-    top: 200px;
+    top: 300px;
     margin: auto;
     box-sizing: border-box;
     border: 2px solid red;
